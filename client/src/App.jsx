@@ -12,7 +12,7 @@ import './App.css'
 
 function App() {
 
-  axios.defaults.baseURL = "http://localhost:8000";
+  axios.defaults.baseURL = "https://dsy-mern-registration-backend.vercel.app";
   axios.defaults.withCredentials = true;
 
 
