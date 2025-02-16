@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.use(cors({
     credentials: true,
-    origin: "https://dsy-mern-registration.vercel.app"
+    origin: "https://dsy-mern-registration.onrender.com"
 }))
 
 
