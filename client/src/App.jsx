@@ -12,7 +12,7 @@ import './App.css'
 
 function App() {
 
-  axios.defaults.baseURL = "https://dsy-mern-registration-backend.vercel.app";
+  axios.defaults.baseURL = "https://dsy-mern-registration-backend.onrender.com";
   axios.defaults.withCredentials = true;
 
 
