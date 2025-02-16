@@ -20,7 +20,7 @@ mongoose.connect(process.env.MongoDB_Url , {})
 .catch((error) => console.log("MongoDB Error: " , error));
 
 
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 
 
