@@ -1,0 +1,61 @@
+/* Home Page Styles */
+.home__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(45deg, #6a11cb, #2575fc, #ff512f, #dd2476);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s infinite alternate ease-in-out;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+.home__content {
+    text-align: center;
+    color: white;
+    padding: 40px;
+    max-width: 800px;
+    /* background: rgba(255, 255, 255, 0.1); */
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); */
+}
+
+.home__icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.home__title {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.home__subtitle {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.home__link {
+    color: #333;
+    font-weight: 700;
+}
+
+.home__link:hover{
+    color: #0c0c0c;
+    text-decoration: underline;
+}

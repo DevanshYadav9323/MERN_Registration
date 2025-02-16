@@ -1,0 +1,105 @@
+/* About Page Styling */
+
+body {
+    overflow-x: clip;
+}
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: fit-content;
+    background: #f8f9fa; /* Light background */
+    color: #222; /* Dark text */
+    padding: 40px 20px;
+    margin: 80px 0 0 0;
+}
+
+.about__content {
+    /* max-width: 900px; */
+    width: 100vw;
+    text-align: center;
+}
+
+.about__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #111; /* Darker title */
+}
+
+.about__description {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #444; /* Darker text for readability */
+    margin-bottom: 2rem;
+}
+
+.about__section {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.about__section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    color: #111;
+}
+
+.about__subheading {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #333;
+}
+
+.about__list {
+    list-style: none;
+    padding: 0;
+}
+
+.about__list-item {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #444;
+    margin: 8px 0;
+}
+
+.about__list-item strong {
+    color: #111;
+}
+
+.about__list-item::before {
+    content: "•";
+    color: #007bff; /* Blue bullet point */
+    font-weight: bold;
+    display: inline-block;
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about__title {
+        font-size: 2rem;
+    }
+
+    .about__description {
+        font-size: 1.2rem;
+    }
+
+    .about__section-title {
+        font-size: 1.8rem;
+    }
+
+    .about__subheading {
+        font-size: 1.4rem;
+    }
+
+    .about__list-item {
+        font-size: 1.1rem;
+    }
+}

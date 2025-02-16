@@ -1,0 +1,127 @@
+/* Navbar Base Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    width: 100%;
+    background: #f9f9f9; /* Light background */
+    color: #222; /* Dark text */
+    padding: 15px 5%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Container */
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Logo Styling */
+.navbar__logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #222;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar__logo:hover {
+    color: #007bff;
+}
+
+/* Links Section */
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Individual Link */
+.navbar__link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #444;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar__link:hover {
+    color: #007bff;
+}
+
+/* Logout Button */
+.navbar__button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar__button:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets & Smaller Laptops) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 12px 4%;
+    }
+    
+    .navbar__links {
+        gap: 20px;
+    }
+
+    .navbar__link {
+        font-size: 1.1rem;
+    }
+
+    .navbar__button {
+        padding: 9px 16px;
+    }
+}
+
+/* Small Screens (Mobile Devices) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 3%;
+        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar__container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar__links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar__link {
+        font-size: 1rem;
+    }
+
+    .navbar__button {
+        font-size: 0.95rem;
+        padding: 8px 14px;
+    }
+}
