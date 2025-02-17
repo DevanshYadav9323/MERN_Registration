@@ -17,9 +17,9 @@ function Navbar() {
     await axios.get("/logout");
     toast.success("Logout Successful");
     navigate("/");
-    setTimeout(() => {
-      window.location.reload();
-    }, 1500);
+    // setTimeout(() => {
+    //   window.location.reload();
+    // }, 1500);
   };
 
   return (
