@@ -29,9 +29,9 @@ function Login() {
             else{
                 toast.success("Login Successful");
                 navigate("/dashboard");
-                // setTimeout(() => {
-                //     window.location.reload();
-                // }, 1500);
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1500);
                 setData({});
             }
             

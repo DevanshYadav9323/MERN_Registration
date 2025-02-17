@@ -119,7 +119,6 @@ const loginUser = async (req, res) => {
                             httpOnly: true,   // Security: Prevents access from JavaScript
                             secure: true,     // Required for HTTPS (Render uses HTTPS)
                             sameSite: 'None', // Required for cross-origin cookies
-                            maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days (ensure persistence)
                           }).json(user);
                     })
 
